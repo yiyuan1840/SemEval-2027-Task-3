@@ -4,7 +4,7 @@
 *Group 25*
 
 
-# Data 
+### Data 
 
 A Synthetic Dataset for Lexical Semantic Change Detection over Multiple Time Points
 
