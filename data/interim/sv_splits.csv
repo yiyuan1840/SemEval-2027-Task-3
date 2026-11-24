@@ -1,0 +1,11 @@
+word,split,fold,n,pos_rate
+kvinna,test,-1,290,0.228
+dumpa,train,0,145,0.31
+exportera,train,1,149,0.946
+fru,train,2,274,0.894
+fröken,train,3,174,0.057
+förort,train,4,150,0.493
+herre,train,5,283,0.071
+motiv,train,6,291,0.182
+skär,train,7,98,0.276
+suga,train,8,129,0.186
