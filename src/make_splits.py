@@ -47,10 +47,6 @@ MASTER_FILE = PROJECT_DIR / "data" / "interim" / "sv_master.csv"
 SPLITS_FILE = PROJECT_DIR / "data" / "interim" / "sv_splits.csv"
 
 
-# ----------------------------------------------------------------------
-# Step 1: decide which word goes where
-# ----------------------------------------------------------------------
-
 def make_splits(master):
     """Return a small table with one row per word: word, split, fold."""
 
@@ -90,11 +86,6 @@ def make_splits(master):
 
     return splits
 
-
-# ----------------------------------------------------------------------
-# Step 2: helpers that other scripts can import
-# ----------------------------------------------------------------------
-
 def load_split():
     """
     Read the master table and the splits file.
@@ -128,11 +119,6 @@ def get_cv_folds(train):
         val_part = train[train["word"] == val_word]
         folds.append((val_word, train_part, val_part))
     return folds
-
-
-# ----------------------------------------------------------------------
-# Main: make the splits, save them, and print a summary
-# ----------------------------------------------------------------------
 
 def main():
     master = pd.read_csv(MASTER_FILE, dtype={"gold_senses": str})
